@@ -1,6 +1,6 @@
 {
   "name": "start.spring.io初始化操作",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
   "description": "Switches default build tool  at start.spring.io",
     "homepage_url": "https://github.com/orgs/pig-mesh",

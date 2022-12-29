@@ -10,8 +10,10 @@ const readyStateCheckInterval = setInterval(function () {
             radioButtons[0].click();
         }
 
-        // group 修改为 com.pig4cloud
-        document.getElementById('input-group').value = 'com.pig4cloud'
-        document.getElementById('input-packageName').value = 'com.pig4cloud.demo'
+        // project 修改
+        const time = new Date().getTime()
+        const artifact = document.getElementById('input-artifact');
+        artifact.value = `demo${time}`
+        artifact.dispatchEvent(new Event("input", {bubbles: true}));
     }
 }, 10);
