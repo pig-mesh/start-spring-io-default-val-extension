@@ -1,0 +1,23 @@
+{
+  "name": "start.spring.io初始化操作",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Switches default build tool  at start.spring.io",
+    "homepage_url": "https://github.com/orgs/pig-mesh",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": [
+    "https://start.spring.io/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://start.spring.io/**"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ]
+}
